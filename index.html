@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <link rel="icon" href="images/icon.png">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="sections-container">
+        <br><br>
+    <div class="typeo">
+        <h1><center>Encriptador de texto.</center></h1>
+        <img class="logo" src="images/icon.png" alt=""><br>
+    </div>
+    <br><br><br>
+
+    <div id="container" >
+        <section class="section1" id="ingreso">
+            <textarea id="texto" placeholder="Ingrese aquí el texto a procesar, solo letras minusculas y sin acentos..."></textarea>
+            <div id="botones1">
+                <button id="enc" onclick="encriptar()">Encriptar</button>
+                &nbsp&nbsp
+                <button id="des" onclick="desencriptar()">Desencriptar</button>
+                
+            </div>
+        </section>
+
+        &nbsp&nbsp&nbsp&nbsp
+
+        <section class="section2" id="egreso">
+            <textarea class="imagen" id="resultado" placeholder="Aquí mostrará el texto procesado..." readonly></textarea>
+            <div id="botones2">&nbsp
+                <div>
+                    <button class="copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </div>
+        </section>       
+    </div>
+    </div>
+    
+</div>
+<br><br>
+<footer class="pie">2023 || Matias Luciano Lovera ||</footer>
+
+</body>
+
+</html>
